@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Weather</string>
+    <string name="city">孝感</string>
+    <string name="back">&#xe70c;</string>
+    <string name="setting">&#xe624;</string>
+    <string name="menu">&#xeaf1;</string>
+    <string name="edit">&#xe614;</string>
+    <string name="loading">&#xe66c;</string>
+    <string name="search">&#xe634;</string>
+    <string name="temperature">20</string>
+    <string name="humidity">&#xe615;</string>
+    <string name="aqi">&#xe67d;</string>
+    <string name="celcius">&#xe60f;</string>
+    <string name="farenheit">&#xe61e;</string>
+    <string name="star">&#xe613;</string>
+    <string name="sun">&#xe61a;</string>
+    <string name="sunrise">&#xe61b;</string>
+    <string name="sun_rain">&#xe627;</string>
+    <string name="rain">&#xe618;</string>
+    <string name="rain2">&#xe617;</string>
+    <string name="heavy_rain">&#xe612;</string>
+    <string name="thunder_rain">&#xe619;</string>
+    <string name="cloudy">&#xe611;</string>
+    <string name="cloudy_sun">&#xe610;</string>
+    <string name="snowy">&#xe62c;</string>
+    <string name="snow">&#xe616;</string>
+    <string name="north">&#xe602;</string>
+    <string name="south">&#xe758;</string>
+    <string name="west">&#xe601;</string>
+    <string name="east">&#xe754;</string>
+    <string name="south_east">&#xe756;</string>
+    <string name="north_east">&#xe603;</string>
+    <string name="north_west">&#xe757;</string>
+    <string name="south_west">&#xe600;</string>
+    <string name="future_text">未来5天温度走势</string>
+
+</resources>

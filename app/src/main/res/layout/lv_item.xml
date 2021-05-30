@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical">
+
+        <com.sy.myweather.FontIconView
+            android:id="@+id/future_icon"
+            style="@style/s_Text"
+            android:text="@string/sun" />
+
+        <TextView
+            android:id="@+id/future_date"
+            style="@style/s_Text"
+            android:letterSpacing="0.1"
+            android:text="29日" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/future_direct"
+        style="@style/s_Text"
+        android:layout_weight="1"
+        android:text="东风"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/future_temperature"
+        style="@style/s_Text"
+        android:layout_weight="1"
+        android:letterSpacing="0.1"
+        android:text="17°/21°"
+        android:textAlignment="textEnd" />
+
+
+</LinearLayout>

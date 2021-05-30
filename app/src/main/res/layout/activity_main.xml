@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="50dp"
+    tools:context=".MainActivity">
+
+    <com.sy.myweather.FontIconView
+        android:id="@+id/edit_icon"
+        style="@style/normalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_icon" />
+
+
+    <LinearLayout
+        android:id="@+id/humidity_linear"
+        style="@style/little_label"
+        app:layout_constraintBottom_toTopOf="@id/future_weather"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <com.sy.myweather.FontIconView
+            style="@style/s_Text"
+            android:layout_marginEnd="5dp"
+            android:text="@string/humidity"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/weather_humidity"
+            style="@style/normalText"
+            android:text="78 RH%"
+            android:textAlignment="textEnd"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aqi_linear"
+        style="@style/little_label"
+        app:layout_constraintBottom_toTopOf="@id/future_weather"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.sy.myweather.FontIconView
+            style="@style/s_Text"
+            android:layout_marginEnd="5dp"
+            android:text="@string/aqi" />
+
+        <TextView
+            style="@style/normalText"
+            android:layout_marginEnd="3dp"
+            android:text="空气质量"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/weather_aqi"
+            style="@style/normalText"
+            android:text="32"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/future_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:divider="@drawable/divider_line"
+        android:orientation="vertical"
+        android:showDividers="middle|end"
+        app:layout_constraintBottom_toTopOf="@id/future_state" />
+
+
+    <Button
+        android:id="@+id/future_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="@string/future_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
