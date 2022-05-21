@@ -32,14 +32,14 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private int num = 0;
-    public static String city = "孝感";
+    public static String city = "";
 
     public void setCity(String city) {
         MainActivity.city = city;
         ((TextView) this.findViewById(R.id.city)).setText(city);
     }
 
-    public static final String key = "7419938dfc010d719e54ca270a4c3a62";
+    public static final String key = "";
     public static final String cityListURL = "http://apis.juhe.cn/simpleWeather/cityList?key=" + key;
     public static final String weatherByCityURL = "http://apis.juhe.cn/simpleWeather/query?key=" + key + "&city=";
     public static final String lifeByCityURL = "http://apis.juhe.cn/simpleWeather/life?key=" + key + "&city=";
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         sharedPre = getSharedPreferences("weather_info", MODE_PRIVATE);
-        MainActivity.city = sharedPre.getString("city", "孝感");
+        MainActivity.city = sharedPre.getString("city", MainActivity.city);
         init();
         findViewById(R.id.edit_icon).setOnClickListener(this);
         findViewById(R.id.future_state).setOnClickListener(this);
